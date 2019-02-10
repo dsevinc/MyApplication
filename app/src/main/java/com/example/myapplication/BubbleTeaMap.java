@@ -7,6 +7,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -37,12 +38,16 @@ public class BubbleTeaMap extends FragmentActivity implements OnMapReadyCallback
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
+        UiSettings mapSettings;
+
 
         // Add a marker in Ottawa and move the camera
         LatLng ottawa = new LatLng(45.42170, -75.681500);
         mMap.addMarker(new MarkerOptions().position(ottawa).title("Marker in Ottawa"));
 //      mMap.moveCamera(CameraUpdateFactory.newLatLng(ottawa));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ottawa,(mMap.getMaxZoomLevel ())-3));
+
+
 
     }
 }
