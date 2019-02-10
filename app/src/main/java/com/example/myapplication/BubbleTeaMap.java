@@ -38,9 +38,9 @@ public class BubbleTeaMap extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
-        // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(45.42170, -75.681500);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        // Add a marker in Ottawa and move the camera
+        LatLng ottawa = new LatLng(45.42170, -75.681500);
+        mMap.addMarker(new MarkerOptions().position(ottawa).title("Marker in Ottawa"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(ottawa));
     }
 }
