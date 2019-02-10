@@ -91,7 +91,13 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_featured) {
             Intent intent = new Intent(this, Featured.class);
             startActivity(intent);
-        } else if (id == R.id.nav_share) {
+        }
+        else if(id == R.id.nav_reviews) {
+            Intent intent = new Intent(this, Reviews.class);
+            startActivity(intent);
+
+        }
+        else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 

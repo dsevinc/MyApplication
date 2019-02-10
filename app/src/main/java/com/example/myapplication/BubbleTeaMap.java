@@ -68,6 +68,7 @@ public class BubbleTeaMap extends FragmentActivity implements OnMyLocationButton
         mMap.setOnMyLocationButtonClickListener(this);
         mMap.setOnMyLocationClickListener(this);
 
+        
 
         // Add a marker in Ottawa and move the camera
         LatLng ottawa = new LatLng(45.42170, -75.681500);

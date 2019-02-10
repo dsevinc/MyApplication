@@ -17,7 +17,7 @@
             android:icon="@drawable/featured"
             android:title="Featured" />
         <item
-            android:id="@+id/nav_featuredS"
+            android:id="@+id/nav_reviews"
             android:icon="@drawable/map"
             android:title="Reviews" />
     </group>
