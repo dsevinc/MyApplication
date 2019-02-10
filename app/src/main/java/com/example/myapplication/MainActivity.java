@@ -85,8 +85,9 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(this, BubbleTeaMap.class);
             startActivity(intent);
             // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
+        } else if (id == R.id.nav_favorites) {
+            Intent intent = new Intent(this, Favorites.class);
+            startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
