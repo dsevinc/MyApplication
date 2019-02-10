@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -11,10 +12,11 @@ import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+
 public class BubbleTeaMap extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-
+    LatLng myPosition;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,6 +25,9 @@ public class BubbleTeaMap extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+
+
+
     }
 
 
@@ -43,7 +48,18 @@ public class BubbleTeaMap extends FragmentActivity implements OnMapReadyCallback
 
         // Add a marker in Ottawa and move the camera
         LatLng ottawa = new LatLng(45.42170, -75.681500);
+        LatLng CoCo = new LatLng(45.4155275, -75.6970247);
+        LatLng chatime = new LatLng(45.4114658, -75.7082453);
+        LatLng presotea = new LatLng(45.4270942,-75.691516);
+
         mMap.addMarker(new MarkerOptions().position(ottawa).title("Marker in Ottawa"));
+        mMap.addMarker(new MarkerOptions().position(CoCo).title("CoCo"));
+        mMap.addMarker(new MarkerOptions().position(chatime).title("Chatime"));
+        mMap.addMarker(new MarkerOptions().position(presotea).title("Presotea"));
+
+
+
+
 //      mMap.moveCamera(CameraUpdateFactory.newLatLng(ottawa));
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ottawa,(mMap.getMaxZoomLevel ())-3));
 

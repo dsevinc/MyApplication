@@ -7,6 +7,7 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id = "@+id/chatime"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="@string/feature2"
@@ -14,5 +15,20 @@
         android:textColor="@android:color/black"
         android:textSize="48dp"
         android:textStyle="bold" />
-
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingBottom="300"
+        android:src = "@drawable/chatime"
+        />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Roasted Milk Tea"
+        android:textAlignment="center" />
+0
 </FrameLayout>
