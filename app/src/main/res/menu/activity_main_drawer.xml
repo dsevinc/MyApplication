@@ -18,8 +18,8 @@
             android:title="Featured" />
         <item
             android:id="@+id/nav_featuredS"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Featured-scroll" />
+            android:icon="@drawable/map"
+            android:title="Reviews" />
     </group>
 
     <item android:title="Communicate">
