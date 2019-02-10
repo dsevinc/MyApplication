@@ -41,6 +41,8 @@ public class BubbleTeaMap extends FragmentActivity implements OnMapReadyCallback
         // Add a marker in Ottawa and move the camera
         LatLng ottawa = new LatLng(45.42170, -75.681500);
         mMap.addMarker(new MarkerOptions().position(ottawa).title("Marker in Ottawa"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(ottawa));
+//        mMap.moveCamera(CameraUpdateFactory.newLatLng(ottawa));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(ottawa,(mMap.getMaxZoomLevel ())-3));
+
     }
 }
